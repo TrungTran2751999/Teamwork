@@ -14,10 +14,17 @@ public class CountStudent {
         do{
             System.out.print("Fullname: ");
             String fullName = scanner.nextLine();
-            System.out.print("mark: ");
-            float mark = Float.parseFloat(scanner.nextLine());
-
-            countStudent(fullName, studentArray, mark, markArray, i);
+            boolean checkMark = true;
+            do{
+                System.out.print("mark: ");
+                float mark = Float.parseFloat(scanner.nextLine());
+                if(mark < 0 || mark > 10){
+                    checkMark = true;
+                }else{
+                    countStudent(fullName, studentArray, mark, markArray, i);
+                    checkMark = false;
+                }
+            }while (checkMark);
             i++;
         }while (i<=markArray.length-1);
         System.out.printf("%-20s%-20s%-20s", "id", "fullname", "mark");
