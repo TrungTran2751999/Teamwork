@@ -1,3 +1,4 @@
+
 public class FanClass {
     final int SLOW = 1;
     final int MEDIUM = 2;
@@ -36,6 +37,7 @@ public class FanClass {
         this.color =color;
         this.on = on;
     }
+
     public void setToString(FanClass fan, String name){
         if(fan.on){
             System.out.printf("%s: speed: %s - color: %s - radius: %s - fan is on\n",name, fan.speed, fan.color, fan.radius);
@@ -43,6 +45,7 @@ public class FanClass {
             System.out.printf("%s : color: %s - radius: %s - fan is off\n", name, fan.color, fan.radius);
         }
     }
+
 
 
 }
