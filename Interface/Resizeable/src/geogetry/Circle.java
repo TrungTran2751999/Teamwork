@@ -1,4 +1,9 @@
-public class Circle implements Resizeable {
+package geogetry;
+
+import able.Resizeable;
+import abstracts.Geogetry;
+
+public class Circle extends Geogetry implements Resizeable {
     double radius;
     public Circle(){
 
@@ -25,5 +30,11 @@ public class Circle implements Resizeable {
         return "Circle{" +
                 "radius=" + radius +
                 '}';
+    }
+
+    @Override
+    public double getArea() {
+        double area = radius*radius*Math.PI;
+        return area;
     }
 }

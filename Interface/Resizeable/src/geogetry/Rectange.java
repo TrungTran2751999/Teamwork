@@ -1,4 +1,9 @@
-public class Rectange implements Resizeable {
+package geogetry;
+
+import able.Resizeable;
+import abstracts.Geogetry;
+
+public class Rectange extends Geogetry implements Resizeable {
     double width;
     double height;
     public Rectange(){
@@ -37,5 +42,11 @@ public class Rectange implements Resizeable {
                 "width=" + width +
                 ", height=" + height +
                 '}';
+    }
+
+    @Override
+    public double getArea() {
+        double area = width*height;
+        return area;
     }
 }
