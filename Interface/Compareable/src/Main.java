@@ -14,7 +14,7 @@ public class Main {
         }
         System.out.println("After-sorted:");
 
-        Arrays.sort(circles);
+//        Arrays.sort(circles);
 //        for (int i=0; i<circles.length-1; i++) {
 //            if(circles[i].getRadius() > circles[i+1].getRadius()){
 //                ComparableCircle a = circles[i];
@@ -22,7 +22,8 @@ public class Main {
 //                circles[i+1] = a;
 //            }
 //        }
-
+        CircleComparator comparator = new CircleComparator();
+        Arrays.sort(circles, comparator);
         for (ComparableCircle circle : circles) {
             System.out.println(circle);
         }
