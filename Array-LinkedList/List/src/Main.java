@@ -5,12 +5,20 @@ public class Main {
         MyList<Integer> list = new MyList<Integer>();
 
         for(int i=0; i<11; i++){
-            list.add(i);
+            list.push(i);
         }
-        for(int i=0; i<11; i++){
-            System.out.println(list.get(i));
+        for(int i=0; i< list.size(); i++){
+            System.out.printf(list.get(i) + ", ");
         }
-        list.get(-1);
-        System.out.println("element -1: " + list.get(-1));
+        System.out.println("");
+        System.out.println("Index of " + list.indexOf(188));
+//        list.remove(3);
+//        System.out.println("");
+//        list.add(2,100);
+//        for(int i=0; i<list.size; i++){
+//            System.out.println("VVV"+list.get(i) + ", ");
+//        }
+
     }
+
 }
