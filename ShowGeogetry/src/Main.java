@@ -40,7 +40,7 @@ public class Main {
             for(int j=1; j<=width; j++){
                 System.out.print("*");
             }
-            System.out.println("");
+            System.out.println();
         }
     }
     public static void drawSquareTrangle(int height, int type){
@@ -50,7 +50,7 @@ public class Main {
                 for(int j=1; j<=i; j++){
                     System.out.print("*");
                 }
-                System.out.println("");
+                System.out.println();
             }
         }
         if(type == 2){
@@ -59,7 +59,7 @@ public class Main {
                 for(int j = height-(i-1); j>=1; j--){
                     System.out.print("*");
                 }
-                System.out.println("");
+                System.out.println();
             }
         }
         if(type == 3){
@@ -71,7 +71,7 @@ public class Main {
                 for (int a = 1; a <= i; a++) {
                     System.out.print("*");
                 }
-                System.out.println("");
+                System.out.println();
             }
         }
         if(type == 4){
@@ -83,7 +83,7 @@ public class Main {
                 for (int j = 1; j <= i-1; j++) {
                     System.out.print(" ");
                 }
-                System.out.println("");
+                System.out.println();
             }
         }
     }
@@ -96,7 +96,7 @@ public class Main {
             for(int j=1; j<=i+(i-1); j++){
                 System.out.print("*");
             }
-            System.out.println("");
+            System.out.println();
         }
     }
 
